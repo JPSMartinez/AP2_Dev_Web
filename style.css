@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    gap: '5rem';
+    background-color: black;
+}
+
+article {
+    width: 20rem;
+    height: 40rem;
+    text-align: center;
+    background-color: grey;
+    margin: auto;
+}
