@@ -1,0 +1,1 @@
+alert('Acesso não autorizado!');

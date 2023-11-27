@@ -1,0 +1,19 @@
+body {
+    background-image: url('images/botafogo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+}
+
+#loginForm {
+    display: flex;
+    align-items: center;
+    margin: auto;    
+    text-align: center;
+    min-height: 110vh;
+}
+
+#passwordText {
+    color: white;
+}

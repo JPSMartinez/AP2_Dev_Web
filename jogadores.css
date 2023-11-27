@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/detalheBack.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto' sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+article {
+    color: white;
+    width: 20vw;
+    height: 40rem;
+    text-align: center;
+    background-color: grey;
+    background: linear-gradient(135deg, grey, black, white);
+    margin: 10px;
+    border: 10px solid black;
+    padding: 5px;
+}
+
+
+#atletas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: '5rem';
+}
+
+#select {
+    display: none;
+    height: 80px;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    background-color: black;
+    border: 3px solid white;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    
+    height: 80px;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    background-color: black;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 1024px) {
+    #atletas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: '5rem';
+        background-color: black;
+    }
+
+    article {
+        width: 50vw;
+        height: 40rem;
+        text-align: center;
+        background-color: grey;
+        margin: 10px;
+        border: 10px solid white;
+        padding: 5px;
+    }
+}
+@media (max-width: 768px) {
+    #atletas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: '5rem';
+        background-color: black;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    #select {
+        display: flex;
+    }
+
+    article {
+        width: 90vw;
+        height: 40rem;
+        text-align: center;
+        background-color: grey;
+        margin: 10px;
+        border: 10px solid white;
+        padding: 5px;
+    }
+}

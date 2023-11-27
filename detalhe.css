@@ -1,0 +1,61 @@
+body {
+    background-image: url('images/detalheBack.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto' sans-serif;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#fotoAtleta {
+    border: 10px solid white;
+}
+
+#descricao {
+    color: white;
+    border: 10px solid white;
+    padding: 20px;
+    font-size: 22px;
+    background-color: black;
+}
+
+#dados {
+    padding: 20px;
+    flex: 1;
+    background-color: black;
+}
+
+#logoBotafogo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#fotoDados {
+    flex: auto;
+    flex-direction: row;
+}
+
+.descricaoJogador {
+    height: 210px;
+    padding: 10px;
+    background-color: black;
+}
+
+p {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    #fotoDados {
+        flex: auto;
+        flex-direction: column;
+    }
+}

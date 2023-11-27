@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <script src="codigo.js" defer></script>
+    <link href="jogadores.css" rel="stylesheet">
+    <script src="jogadores.js" defer></script>
+    <script src="md5-min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="buttons">
+        <select id="select" onchange="selecionaOpcao()">
+            <option value="optionCompleto">Elenco Completo</option>
+            <option value="optionMasculino">Masculino</option>
+            <option value="optionFeminino">Feminino</option>
+        </select>
+        <input type="button" class="buttons" onclick="elencoCompleto()" value="Elenco completo">
+        <input type="button" class="buttons" onclick="masculino()" value="Masculino">
+        <input type="button" class="buttons" onclick="feminino()" value="Feminino">
+    </div>
+    <div id="atletas"></div>
 </body>
 </html>
